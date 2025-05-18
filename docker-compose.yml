@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   backend:
     build:
@@ -29,7 +27,7 @@ services:
       context: ./artiles-photography-studio
       dockerfile: Dockerfile
     environment:
-      - VITE_API_URL=http://nginx:80/api
+      - REACT_APP_API_URL=http://nginx:80/api
     networks:
       - app-network
 
